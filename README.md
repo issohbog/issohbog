@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![header](https://capsule-render.vercel.app/api?&type=waving&color=timeAuto&height=180&section=header&text=DoHyeon's&fontSize=50&animation=fadeIn&fontAlignY=45)
+![header](https://capsule-render.vercel.app/api?&type=waving&color=timeAuto&height=180&section=header&text=DoHyeon's%20Hub&fontSize=50&animation=fadeIn&fontAlignY=45)
 
 <br>
 <div align='center'>💻깊고 넓게 공부하는 개발자 박도현(●'◡'●)입니다.</div>
