@@ -52,12 +52,12 @@ Here are some ideas to get you started:
  <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black"/>&nbsp
 
    <img src="https://img.shields.io/badge/Java-007396.svg?style=flat-square&logo=OpenJDK&logoColor=white"/>&nbsp
-  <img src="https://img.shields.io/badge/풀스택-7952B3.svg?style=flat-square&logoColor=white"/>&nbsp
+
   <img src="https://img.shields.io/badge/API-FF6F00.svg?style=flat-square&logo=FastAPI&logoColor=white"/>&nbsp
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black"/>&nbsp
   <img src="https://img.shields.io/badge/Git-F05032.svg?style=flat-square&logo=Git&logoColor=white"/>&nbsp
-  <img src="https://img.shields.io/badge/프론트엔드-61DAFB.svg?style=flat-square&logoColor=white"/>&nbsp
+
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp
   <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat-square&logo=Python&logoColor=white"/>&nbsp
   <img src="https://img.shields.io/badge/C-A8B9CC.svg?style=flat-square&logo=C&logoColor=white"/>&nbsp
