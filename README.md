@@ -19,8 +19,8 @@ Here are some ideas to get you started:
 <div align='center'>💻깊고 넓게 공부하는 개발자 박도현(●'◡'●)입니다.</div>
 <br>
 <div align='center'> ✉Email : <a href="mailto:qkrehgus2312@naver.com">qkrehgus2312@naver.com</a></div>
-<div align='center'> 🔗Notion : <a href="https://abounding-clownfish-456.notion.site/9589212dfdac4f8ea36e97dcd79f44d3">노션링크</a></div>
-<div align='center'> 🌐Blog : <a href="https://nocdu112.tistory.com/">블로그</a></div>
+<div align='center'> 🔗Notion : <a href="https://www.notion.so/1b309bf8c3c4800aa3d6d334bde77ca0?v=1b309bf8c3c48055a4c5000c777b63e3&source=copy_link">노션링크</a></div>
+<!-- <div align='center'> 🌐Blog : <a href="https://nocdu112.tistory.com/">블로그</a></div> -->
 <br>
 <br>
 <br>
@@ -32,23 +32,23 @@ Here are some ideas to get you started:
 <h3 align="center">📚 Tech Stack 📚</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Java-000000.svg?style=flat-square&logo=OpenJdk&logoColor=white"/></a>&nbsp
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/></a>&nbsp 
+<!--   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/></a>&nbsp  -->
   <br>
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"/></a>&nbsp
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a>&nbsp
-  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=Jetpack%20Compose&logoColor=white"/></a>&nbsp 
+<!--   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a>&nbsp -->
+<!--   <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=Jetpack%20Compose&logoColor=white"/></a>&nbsp  -->
   
   <br>
   <img src="https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=Postgresql&logoColor=white"/></a>&nbsp
+<!--   <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=Postgresql&logoColor=white"/></a>&nbsp -->
   <img src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=NGINX&logoColor=white"/></a>&nbsp
   <img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat-square&logo=Apache%20Tomcat&logoColor=white"/></a>&nbsp
   <br>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/></a>&nbsp 
+<!--   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/></a>&nbsp  -->
+<!--   <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/></a>&nbsp  -->
+<!--   <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/></a>&nbsp  -->
+<!--   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/></a>&nbsp  -->
 </p>
 <br>
 <!--
