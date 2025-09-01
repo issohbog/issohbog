@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 <div align='center'>💻깊고 넓게 공부하는 개발자 박도현(●'◡'●)입니다.</div>
 <br>
 <div align='center'> ✉Email : <a href="mailto:qkrehgus2312@naver.com">qkrehgus2312@naver.com</a></div>
-<div align='center'> 🔗Notion : <a href="https://www.notion.so/1b309bf8c3c4800aa3d6d334bde77ca0?v=1b309bf8c3c48055a4c5000c777b63e3&source=copy_link">노션링크</a></div>
+<!-- <div align='center'> 🔗Notion : <a href="https://www.notion.so/1b309bf8c3c4800aa3d6d334bde77ca0?v=1b309bf8c3c48055a4c5000c777b63e3&source=copy_link">노션링크</a></div> -->
 <!-- <div align='center'> 🌐Blog : <a href="https://nocdu112.tistory.com/">블로그</a></div> -->
 <br>
 <br>
