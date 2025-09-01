@@ -54,6 +54,8 @@ Here are some ideas to get you started:
   <img src="https://img.shields.io/badge/GitHub-181717.svg?style=flat-square&logo=GitHub&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/VSCode-007ACC.svg?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Eclipse-2C2255.svg?style=flat-square&logo=Eclipse%20IDE&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Django-092E20.svg?style=flat-square&logo=django&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Flutter-02569B.svg?style=flat-square&logo=flutter&logoColor=white"/>&nbsp;
   <br/>
 
   <!-- Frontend -->
