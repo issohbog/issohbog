@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 
 
 <h3 align="center">📚 Tech Stack 📚</h3>
-<p align="center">
+<div align="center">
 
   <!-- Languages -->
   <img src="https://img.shields.io/badge/Java-007396.svg?style=flat-square&logo=OpenJDK&logoColor=white"/>&nbsp;
@@ -65,7 +65,7 @@ Here are some ideas to get you started:
   <img src="https://img.shields.io/badge/JSP-FFA000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Ajax-4285F4.svg?style=flat-square&logoColor=white"/>&nbsp;
 
-</p>
+</div>
 
 <!--
 <h3 align="center">🌈 Follow Me 🌈</h3>
