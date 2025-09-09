@@ -167,9 +167,9 @@
   - 1페이지는 검색 버튼으로 로딩, 2페이지 이후는 자동 로딩  
   - 첫 페이지는 `innerHTML` 교체, 이후 페이지는 `insertAdjacentHTML('beforeend')`로 증분 추가  
   - 마지막 페이지/빈 결과 분기 처리 → 불필요한 네트워크 호출 차단 및 사용자 안내 제공
+    
+👉 [프로젝트 Repo](https://github.com/ezenteamb2/teamb2)
 
-
-👉 [프로젝트 Repo](https://github.com/ezenteamb2/teamb2) 
 ---
 
 <h3 align="center">📚 Tech Stack 📚</h3>
