@@ -18,14 +18,13 @@
 
 ## 📌 Projects
 
-### 🖥 MagicPOS — MVC 버전 (Spring MVC + Thymeleaf)
+### 🖥 MagicPOS — MVC 버전 (SpringBoot MVC + Thymeleaf)
 - **Stack**  
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=flat-square&logo=Spring%20Boot&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Thymeleaf-005F0F.svg?style=flat-square&logo=Thymeleaf&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=flat-square&logo=Spring%20Security&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/WebSocket-4285F4.svg?style=flat-square&logoColor=white"/>&nbsp;
 
 - **Overview**: 좌석 예약, 요금제/상품 관리, 회원 관리, 결제/로그 분석까지 하나의 서버(MVC)에서 처리하는 통합 관리 시스템  
 
@@ -36,7 +35,15 @@
   - **좌석 상태 관리**:  
     - 사용 중 좌석 → 남은 시간이 60분 이상이면 **녹색**, 60분 이하이면 **빨간색** 표시  
     - 고장 좌석은 **노란색**, 로그아웃 시에는 **휴지통 아이콘** 표시 → 관리자가 클릭 시 이용 가능 좌석으로 변경  
-  - **실시간 반영**: STOMP/WebSocket을 이용해 좌석 상태 변화를 알림 및 대시보드에 즉시 반영  
+  - **실시간 반영**: WebSocket을 이용해 좌석 상태 변화를 알림 및 대시보드에 즉시 반영  
+
+  #### 🎫 요금제 구매 (관리자/사용자)
+  - **관리자 구매**:  
+    - 관리자 화면에서 회원 검색 → 해당 회원에게 현금/카드 결제 기반 요금제 구매 가능  
+    - JS 이벤트로 키 입력 감지 후 실시간 회원 검색 리스트 제공  
+  - **TossPayments 결제 연동**:  
+    - 신용카드 결제 시 TossPayments 모듈 호출  
+    - 결제 성공 후 `user_tickets` 테이블에 구매 내역 저장 (관리자/사용자 공통) 
 
   #### 🧑🏻 회원 관리
   - **CRUD**: 회원 등록·수정·삭제(일괄 삭제), 조회 기능 구현  
@@ -49,30 +56,14 @@
   - **파일 업로드**: 상품 이미지 업로드 및 수정 기능 구현  
   - **페이지네이션**: 대량 상품 목록 관리 최적화  
 
-  #### 🎫 요금제 구매 (관리자/사용자)
-  - **관리자 구매**:  
-    - 관리자 화면에서 회원 검색 → 해당 회원에게 현금/카드 결제 기반 요금제 구매 가능  
-    - JS 이벤트로 키 입력 감지 후 실시간 회원 검색 리스트 제공  
-  - **TossPayments 결제 연동**:  
-    - 신용카드 결제 시 TossPayments 모듈 호출  
-    - 결제 성공 후 `user_tickets` 테이블에 구매 내역 저장 (관리자/사용자 공통)  
-
   #### 👤 회원 가입
   - **유효성 검사**: 입력 값에 대해 실시간 검사 및 경고 문구 표시 → 올바른 데이터만 저장  
 
 👉 [프로젝트 Repo](https://github.com/issohbog/PowerManager_ReactREST)
 
-
-<details>
-  <summary>화면/기능 캡처 & 더보기</summary>
-
-  - 좌석배치/상태변경, 요금제 CRUD, 주문/결제 처리 흐름
-  - (이미지/영상 링크 삽입 위치)
-</details>
-
 ---
 
-### 🖥 MagicPOS — React + REST 버전 (Client/Server 분리)
+### 🖥 MagicPOS — Client/Server 분리 버전 (SpringBoot RestAPI + React) 
 - **Stack**  
   <img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black"/>&nbsp;
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4.svg?style=flat-square&logo=tailwindcss&logoColor=white"/>&nbsp;
@@ -82,7 +73,7 @@
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/WebSocket-4285F4.svg?style=flat-square&logoColor=white"/>&nbsp;
-- **Overview**: 프론트(React)와 백엔드(Spring Boot REST) 분리, JWT 인증과 실시간 좌석 현황 반영
+- **Overview**: 프론트(React)와 백엔드(Spring Boot REST) 분리, 
 - **My Role**  
   - REST API 설계(인증/권한, 좌석/요금제, 주문/정산) 및 예외/검증 규약 수립  
   - Spring Security + JWT 무상태 인증, CORS/필터 체인 구성  
