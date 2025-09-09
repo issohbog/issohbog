@@ -113,32 +113,58 @@
 
 ---
 
-### 🛒 NeoBel (화장품 쇼핑몰, JSP/Servlet)
+### 🛒 NeoBel (화장품 쇼핑몰, JSP/Servlet) — 미니 프로젝트
+
 - **Stack**  
   <img src="https://img.shields.io/badge/JSP-FFA000.svg?style=flat-square&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/Servlet-6DB33F.svg?style=flat-square&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Servlet-6DB33F.svg?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
-- **Overview**: 장바구니/주문/결제 흐름까지 포함한 쇼핑몰 핵심 기능 구현
+
+- **Overview**: Abib 웹사이트를 모티브로 한 JSP/Servlet 기반 쇼핑몰 프로젝트.  
+  상품 조회 → 장바구니 → 주문/주문 내역까지 전자상거래 기본 흐름을 직접 구현하며  
+  MVC 아키텍처와 DAO 계층의 동작 원리를 익힌 프로젝트입니다.  
+
 - **My Role**  
-  - 상품/주문 CRUD, 세션 장바구니 → 주문 테이블 적재 흐름 구현  
-  - Repository/Service/Controller 구조 정리, 예외/검증 처리  
-👉 Repo: `https://github.com/username/neobel`
+  - `alcl-jdbc` DAO 자동 CRUD 기반으로 **재사용 가능한 DAO/Service 구조** 확장  
+  - 장바구니 담기·수량 변경·삭제, 주문 시 **장바구니 초기화 로직** 구현  
+  - `orders` ↔ `order_details` 간 1:N 관계 설계 및 결제 프로세스 반영  
+
+- **Learned**  
+  - **CRUD 중심 웹 개발 흐름**을 체감하며 전체 MVC 구조를 반복 학습  
+  - DAO → Service → Controller 계층을 거치며 **데이터 흐름 추적 및 디버깅 능력** 향상  
+  - 기초적인 전자상거래 기능을 통해 **실무형 로직에 대한 자신감**을 쌓음  
+
+👉 [프로젝트 Repo](https://github.com/issohbog/NeoBel)  <!-- 레포 주소 확인 후 교체 -->
+
 
 ---
 
-### 🚌 공항버스 조회 시스템 (OpenAPI)
+### ✈️ 에어두드림 (공항 종합 정보 서비스) — 정규 프로젝트
+
 - **Stack**  
   <img src="https://img.shields.io/badge/Java-007396.svg?style=flat-square&logo=OpenJDK&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Spring_Framework-6DB33F.svg?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/전자정부표준프레임워크-0054A6.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/JSP-FFA000.svg?style=flat-square&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/OpenAPI-02569B.svg?style=flat-square&logo=Swagger&logoColor=white"/>&nbsp;
-- **Overview**: 공공데이터 API 수집/적재, 조건 검색(출발/도착/시간대) 제공
+  <img src="https://img.shields.io/badge/Tomcat-F8DC75.svg?style=flat-square&logo=Apache%20Tomcat&logoColor=black"/>&nbsp;
+
+- **Overview**  
+  국내외 여행객 증가에 따라 **공항 이용객의 편의성 향상**을 목표로 개발한 공항 종합 정보 서비스입니다.  
+  항공기 실시간 운항 정보, 공항 버스 정보, 주변 지하철 노선도, 숙박 정보까지 제공하며,  
+  **공공데이터 OPEN API**를 적극 활용해 실시간 정보를 제공합니다.  
+
 - **My Role**  
-  - API 수집 자동화 스케줄링, 파싱/정제 후 DB 적재  
-  - 조건 검색 쿼리 최적화 및 페이징/정렬 구현  
-👉 Repo: `https://github.com/username/bus-api-project`
+
+- **OPEN API 파싱 및 정제**: 공공데이터포털 API를 활용하여 버스 노선 데이터 수집 및 정제  
+- **무한 스크롤(Infinite Scroll)**: `IntersectionObserver`를 사용해 스크롤 위치 감지 → 추가 데이터 자동 요청  
+- **서버 페이지네이션**: `count(pageno)` 기반 서버 처리 + `loading` 플래그로 중복 요청 방지  
+- **UX 최적화**:  
+  - 1페이지는 검색 버튼으로 로딩, 2페이지 이후는 자동 로딩  
+  - 첫 페이지는 `innerHTML` 교체, 이후 페이지는 `insertAdjacentHTML('beforeend')`로 증분 추가  
+  - 마지막 페이지/빈 결과 분기 처리 → 불필요한 네트워크 호출 차단 및 사용자 안내 제공
+
 
 ---
 
