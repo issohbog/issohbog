@@ -61,7 +61,7 @@
   #### 👤 회원 가입
   - **유효성 검사**: 입력 값에 대해 실시간 검사 및 경고 문구 표시 → 올바른 데이터만 저장  
 
-👉 [프로젝트 Repo](https://github.com/issohbog/PowerManager_ReactREST)
+👉 [프로젝트 Repo](https://github.com/issohbog/PowerManager)
 
 ---
 
@@ -138,7 +138,7 @@
   - DAO → Service → Controller 계층을 거치며 **데이터 흐름 추적 및 디버깅 능력** 향상  
   - 기초적인 전자상거래 기능을 통해 **실무형 로직에 대한 자신감**을 쌓음  
 
-👉 [프로젝트 Repo](https://github.com/issohbog/NeoBel)  <!-- 레포 주소 확인 후 교체 -->
+👉 [프로젝트 Repo](https://github.com/issohbog/TeamProject_Neobel) 
 
 
 ---
@@ -169,6 +169,7 @@
   - 마지막 페이지/빈 결과 분기 처리 → 불필요한 네트워크 호출 차단 및 사용자 안내 제공
 
 
+👉 [프로젝트 Repo](https://github.com/ezenteamb2/teamb2) 
 ---
 
 <h3 align="center">📚 Tech Stack 📚</h3>
