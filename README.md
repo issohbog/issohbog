@@ -19,6 +19,9 @@
 ## 📌 Projects
 
 ### 🖥 MagicPOS — MVC 버전 (SpringBoot MVC + Thymeleaf)
+
+- **Overview**: 좌석 예약, 요금제/상품 관리, 회원 관리, 결제/로그 분석까지 처리하는 소상공인 시간제 매장 통합 관리 시스템  
+
 - **Stack**  
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=flat-square&logo=Spring%20Boot&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Thymeleaf-005F0F.svg?style=flat-square&logo=Thymeleaf&logoColor=white"/>&nbsp;
@@ -26,7 +29,6 @@
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=flat-square&logo=Spring%20Security&logoColor=white"/>&nbsp;
 
-- **Overview**: 좌석 예약, 요금제/상품 관리, 회원 관리, 결제/로그 분석까지 처리하는 소상공인 시간제 매장 통합 관리 시스템  
 
 - **My Role**  
 
@@ -64,6 +66,9 @@
 ---
 
 ### 🖥 MagicPOS — Client/Server 분리 버전 (SpringBoot RestAPI + React) 
+
+- **Overview**: MVC 버전 프로젝트를 React + Spring Boot REST 구조로 리팩토링, 무상태 인증(JWT), 좌석/요금제/상품 관리 기능을 개선하고 WebSocket 기반 실시간 좌석 상태 반영 및 사용자 UX를 대폭 향상  
+
 - **Stack**  
   <img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black"/>&nbsp;
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=flat-square&logo=Spring%20Boot&logoColor=white"/>&nbsp;
@@ -74,11 +79,14 @@
   <img src="https://img.shields.io/badge/WebSocket-4285F4.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4.svg?style=flat-square&logo=tailwindcss&logoColor=white"/>&nbsp;
 
-- **Overview**: MVC 버전 프로젝트를 React + Spring Boot REST 구조로 리팩토링, 무상태 인증(JWT), 좌석/요금제/상품 관리 기능을 개선하고 WebSocket 기반 실시간 좌석 상태 반영 및 사용자 UX를 대폭 향상  
+- **My Role**
 
-- **My Role**  
+  #### 🪑 좌석 관리 (그룹화/드래그앤드롭)
+  - 기존 34석 고정 좌석 구조 → **좌석 추가/삭제 및 상태 변경 가능**하도록 개선  
+  - **좌석 그룹화 기능** 추가 → 분단 단위로 좌석 관리 가능  
+  - **Drag & Drop UI (Tailwind CSS)** 적용 → 좌석 위치 및 그룹 배치 직관적 수정 가능  
 
-  #### 🏪 매장 관리 (🌟 WebSocket 적용)
+  #### 🏪 매장 관리
   - 로그인 시 `user_tickets` 잔여 시간을 기반으로 좌석 예약, 로그아웃 시 사용한 시간만큼 FIFO 차감 로직 구현  
   - 좌석 상태 시각화: 잔여 시간 ≥ 60분 → **초록색**, ≤ 60분 → **빨간색**, 고장 좌석 → **노란색**, 로그아웃 시 휴지통 표시  
   - **WebSocket 실시간 알림**: 좌석 예약/종료 이벤트 발생 시 서버 → 클라이언트 구독 토픽으로 전달 → 클라이언트는 새로고침 없이 좌석 상태와 Toast 알림 확인 가능  
@@ -93,7 +101,7 @@
   - **파일 업로드 구현**: 상품 이미지 업로드/수정 지원  
   - **페이지네이션 컴포넌트화**로 관리 효율성 향상  
 
-  #### 🎫 요금제 구매 (관리자) (🌟 UX 개선)
+  #### 🎫 요금제 구매 (관리자) 
   - 관리자 화면에서 회원 검색 → 현금/카드로 요금제 구매 가능  
   - **사용자 편의성 향상**: 키 입력 시 실시간 검색, 방향키/엔터키 지원으로 검색/선택 UX 최적화  
   - **TossPayments 결제 연동**: 카드 결제 후 결제 결과를 받아 `user_tickets` 테이블에 저장  
@@ -104,11 +112,6 @@
   #### 👤 회원 가입
   - 실시간 유효성 검사 → 잘못된 값 입력 시 경고 메시지 표시  
 
-  #### 🪑 좌석 관리 (🌟 그룹화/드래그앤드롭)
-  - 기존 34석 고정 좌석 구조 → **좌석 추가/삭제 및 상태 변경 가능**하도록 개선  
-  - **좌석 그룹화 기능** 추가 → 분단 단위로 좌석 관리 가능  
-  - **Drag & Drop UI (Tailwind CSS)** 적용 → 좌석 위치 및 그룹 배치 직관적 수정 가능  
-
 👉 [프로젝트 Repo](https://github.com/issohbog/PowerManager_ReactREST)
 
 ---
@@ -117,7 +120,7 @@
 
 - **Stack**  
   <img src="https://img.shields.io/badge/JSP-FFA000.svg?style=flat-square&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/Servlet-6DB33F.svg?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Servlet-6DB33F.svg?style=flat-square&logo=java&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
 
