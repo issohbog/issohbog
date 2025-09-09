@@ -26,7 +26,7 @@
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=flat-square&logo=Spring%20Security&logoColor=white"/>&nbsp;
 
-- **Overview**: 좌석 예약, 요금제/상품 관리, 회원 관리, 결제/로그 분석까지 하나의 서버(MVC)에서 처리하는 통합 관리 시스템  
+- **Overview**: 좌석 예약, 요금제/상품 관리, 회원 관리, 결제/로그 분석까지 처리하는 소상공인 시간제 매장 통합 관리 시스템  
 
 - **My Role**  
 
@@ -66,29 +66,50 @@
 ### 🖥 MagicPOS — Client/Server 분리 버전 (SpringBoot RestAPI + React) 
 - **Stack**  
   <img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black"/>&nbsp;
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4.svg?style=flat-square&logo=tailwindcss&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=flat-square&logo=Spring%20Boot&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/REST%20API-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
-  <img src="https://img.shields.io/badge/JWT-000000.svg?style=flat-square&logo=JSON%20Web%20Tokens&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MyBatis-000000.svg?style=flat-square&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/JWT-000000.svg?style=flat-square&logo=JSON%20Web%20Tokens&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/WebSocket-4285F4.svg?style=flat-square&logoColor=white"/>&nbsp;
-- **Overview**: 프론트(React)와 백엔드(Spring Boot REST) 분리, 
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4.svg?style=flat-square&logo=tailwindcss&logoColor=white"/>&nbsp;
+
+- **Overview**: MVC 버전 프로젝트를 React + Spring Boot REST 구조로 리팩토링, 무상태 인증(JWT), 좌석/요금제/상품 관리 기능을 개선하고 WebSocket 기반 실시간 좌석 상태 반영 및 사용자 UX를 대폭 향상  
+
 - **My Role**  
-  - REST API 설계(인증/권한, 좌석/요금제, 주문/정산) 및 예외/검증 규약 수립  
-  - Spring Security + JWT 무상태 인증, CORS/필터 체인 구성  
-  - React 좌석 관리 UI, 드래그/매핑, 실시간(WebSocket) 좌석 상태 업데이트  
-  - 비동기 상태 관리, API 에러/로딩 UX, 페이징/검색/필터 도입  
-👉 Front Repo: `https://github.com/username/magicpos-react`  
-👉 Back Repo: `https://github.com/username/magicpos-rest`  (수정해서 사용)
 
-<details>
-  <summary>아키텍처/API 문서 & 더보기</summary>
+  #### 🏪 매장 관리 (🌟 WebSocket 적용)
+  - 로그인 시 `user_tickets` 잔여 시간을 기반으로 좌석 예약, 로그아웃 시 사용한 시간만큼 FIFO 차감 로직 구현  
+  - 좌석 상태 시각화: 잔여 시간 ≥ 60분 → **초록색**, ≤ 60분 → **빨간색**, 고장 좌석 → **노란색**, 로그아웃 시 휴지통 표시  
+  - **WebSocket 실시간 알림**: 좌석 예약/종료 이벤트 발생 시 서버 → 클라이언트 구독 토픽으로 전달 → 클라이언트는 새로고침 없이 좌석 상태와 Toast 알림 확인 가능  
 
-  - Client: React + Tailwind, 상태 관리/라우팅 구조
-  - Server: Spring Boot, 도메인 계층, 보안 필터/핸들러 구성
-  - (Swagger/포스트맨, 시연 영상 링크 삽입 위치)
-</details>
+  #### 🧑🏻 회원 관리
+  - **CRUD 기능**: 회원 등록·수정·삭제(일괄 삭제), 조회  
+  - **Ajax ID 중복 체크**, **비밀번호 초기화**(암호화 후 업데이트) 구현  
+  - **페이지네이션 컴포넌트화**: MVC 대비 더 단순하고 재사용성 높은 구조로 React 컴포넌트 설계  
+
+  #### 📦 상품 관리
+  - **상품/상품 분류 CRUD**: 관리자 UI에서 등록·수정·삭제 가능  
+  - **파일 업로드 구현**: 상품 이미지 업로드/수정 지원  
+  - **페이지네이션 컴포넌트화**로 관리 효율성 향상  
+
+  #### 🎫 요금제 구매 (관리자) (🌟 UX 개선)
+  - 관리자 화면에서 회원 검색 → 현금/카드로 요금제 구매 가능  
+  - **사용자 편의성 향상**: 키 입력 시 실시간 검색, 방향키/엔터키 지원으로 검색/선택 UX 최적화  
+  - **TossPayments 결제 연동**: 카드 결제 후 결제 결과를 받아 `user_tickets` 테이블에 저장  
+
+  #### 🎫 요금제 구매 (사용자)
+  - 사용자 UI에서 TossPayments 모듈 연동 → 결제 성공 시 DB 적재  
+
+  #### 👤 회원 가입
+  - 실시간 유효성 검사 → 잘못된 값 입력 시 경고 메시지 표시  
+
+  #### 🪑 좌석 관리 (🌟 그룹화/드래그앤드롭)
+  - 기존 34석 고정 좌석 구조 → **좌석 추가/삭제 및 상태 변경 가능**하도록 개선  
+  - **좌석 그룹화 기능** 추가 → 분단 단위로 좌석 관리 가능  
+  - **Drag & Drop UI (Tailwind CSS)** 적용 → 좌석 위치 및 그룹 배치 직관적 수정 가능  
+
+👉 [프로젝트 Repo](https://github.com/issohbog/PowerManager_ReactREST)
 
 ---
 
