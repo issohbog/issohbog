@@ -6,7 +6,7 @@
 <div align='center'>💻 깊고 넓게 공부하는 개발자 박도현(●'◡'●)입니다.</div>
 <br>
 <div align='center'> ✉ Email : <a href="mailto:qkrehgus2312@naver.com">qkrehgus2312@naver.com</a></div>
-<div align='center'> 🔗 Notion : <a href="https://www.notion.so/25e09bf8c3c480e5b274e3a800193c3a?source=copy_link">노션링크</a></div>
+<div align='center'> 🔗 Notion : <a href="https://www.notion.so/25e09bf8c3c480e5b274e3a800193c3a?source=copy_link">노션 포트폴리오</a></div>
 <br>
 <br>
 <br>
